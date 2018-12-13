@@ -1,5 +1,5 @@
-FROM diuis/docker-emsdk-base-python3:v1.0.11
+FROM diuis/docker-emsdk-base-python3:v1.0.0
 
-RUN /emsdk/juj-emsdk-7a0e274/emsdk install clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.37.36-64bit && \
-    /emsdk/juj-emsdk-7a0e274/emsdk activate clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.37.36-64bit && \
-    rm -Rf /emsdk/juj-emsdk-7a0e274/zips
+RUN /home/appuser/emsdk/emsdk install clang-upstream-37918-64bit emscripten-upstream-37918-64bit binaryen-upstream-37918-64bit && \
+    /home/appuser/emsdk/emsdk activate clang-upstream-37918-64bit emscripten-upstream-37918-64bit binaryen-upstream-37918-64bit && \
+    rm -Rf /home/appuser/emsdk/zips
