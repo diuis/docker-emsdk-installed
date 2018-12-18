@@ -6,5 +6,5 @@ RUN apt-get update && apt-get install --no-install-recommends -y git && \
 USER appuser
 RUN  cd /home/appuser/emsdk && \
     ./emsdk update && \
-    ./emsdk install clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.38.21-64bit && \
-    ./emsdk activate clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.38.21-64bit
+    ./emsdk install --enable-wasm --build=Release clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.38.21-64bit && \
+    ./emsdk activate --build=Release clang-e1.38.21-64bit emscripten-1.38.21 binaryen-tag-1.38.21-64bit
