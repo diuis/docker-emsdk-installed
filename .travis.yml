@@ -9,7 +9,7 @@ services:
 
 env:
   global:
-    - IMAGE_NAME=diuis/docker-emsdk-installed-python3
+    - IMAGE_NAME=diuis/docker-emsdk-installed
 
 script:
   - docker build . -t "$IMAGE_NAME"

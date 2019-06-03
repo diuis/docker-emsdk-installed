@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-base-python3:v1.0.0
+FROM diuis/docker-emsdk-base:v1.0.1
 
 USER appuser
 RUN  cd /home/appuser/emsdk && \
