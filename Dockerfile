@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-base:18.10
+FROM diuis/docker-emsdk-base:19.04
 
 USER appuser
 
