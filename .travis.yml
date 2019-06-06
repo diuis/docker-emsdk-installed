@@ -12,6 +12,7 @@ env:
     - IMAGE_NAME=diuis/docker-emsdk-installed
 
 script:
+  - docker --version
   - docker build . -t "$IMAGE_NAME"
 
 before_deploy:
