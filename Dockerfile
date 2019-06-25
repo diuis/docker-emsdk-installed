@@ -1,7 +1,7 @@
 FROM diuis/docker-emsdk-base:18.10
 
 USER root
-RUN update-alternatives --set python /usr/bin/python2.7
+RUN update-alternatives --set python /usr/bin/python3.6
 
 USER appuser
 
