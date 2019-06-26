@@ -9,4 +9,5 @@ ARG EMSDK_VERS=1.38.31
 ARG EMSDK_PATH=/home/appuser/emsdk/emsdk
 RUN ${EMSDK_PATH} install  --build=Release clang-e${EMSDK_VERS}-64bit emscripten-${EMSDK_VERS} sdk-${EMSDK_VERS}-64bit && \
     ${EMSDK_PATH} activate --build=Release clang-e${EMSDK_VERS}-64bit emscripten-${EMSDK_VERS} sdk-${EMSDK_VERS}-64bit
+SHELL ["/bin/bash", "-c"]
 RUN source /home/appuser/emsdk/emsdk_env.sh
