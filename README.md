@@ -3,4 +3,4 @@
 Docker ubuntu image with emsdk installed
 
 
-[![Build Status](https://travis-ci.com/diuis/docker-emsdk-installed.svg?branch=master)](https://travis-ci.com/diuis/docker-emsdk-installed)
+[![Build Status](https://travis-ci.com/diuis/docker-emsdk-installed.svg?branch=ubuntu18.10-python3)](https://travis-ci.com/diuis/docker-emsdk-installed)
