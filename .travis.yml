@@ -2,7 +2,7 @@ language: minimal
 
 git:
   depth: false
-  quiet: false
+  quiet: true
 
 services:
   - docker
