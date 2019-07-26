@@ -4,3 +4,4 @@ USER appuser
 ARG EMSDK_VERS=1.38.40
 ARG EMSDK_PATH=/home/appuser/emsdk/emsdk
 RUN ${EMSDK_PATH} install --build=Release ${EMSDK_VERS}
+RUN ${EMSDK_PATH} activate ${EMSDK_VERS}
